@@ -24,11 +24,24 @@ export class RegisterComponent {
   };
 
 
-
-  register() {
+  registerAdmin(){
     const headers = this.obtainHeader.getAuthHeader();
     this.http
     .post<any>(`${BASE_BACKEND_URL}/auth/register`, this.registerData, { headers }).subscribe((res)=>{
+      console.log(res);
+      this.router.navigate(['/login']).then(()=>{
+        window.location.reload();
+      })
+this.router
+    },
+    (error)=>{
+      console.log("error: " , error)
+    })
+  }
+  register() {
+    const headers = this.obtainHeader.getAuthHeader();
+    this.http
+    .post<any>(`${BASE_BACKEND_URL}/auth/registeradmin`, this.registerData, { headers }).subscribe((res)=>{
       console.log(res);
       this.router.navigate(['/login']).then(()=>{
         window.location.reload();
