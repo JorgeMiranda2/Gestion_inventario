@@ -1,0 +1,19 @@
+<div class="container mt-4 mb-5">
+  <h4 class="mb-4">Proveedores</h4>
+
+  <!-- Etiquetas y elementos de formulario -->
+  <label for="nameInput">Nombre:</label>
+  <input id="nameInput" type="text" class="form-control mb-3" [(ngModel)]="supplier.name" placeholder="Nombre del proveedor">
+
+  <label for="accountNumberInput">Número de cuenta:</label>
+  <input id="accountNumberInput" type="text" class="form-control mb-3" [(ngModel)]="supplier.accountNumber" placeholder="Número de cuenta">
+
+  <label for="accountNumberInput">Estado:</label>
+  <input id="accountNumberInput" type="text" class="form-control mb-3" [(ngModel)]="supplier.status" placeholder="Estado">
+
+  <!-- Botones de aceptar y cerrar -->
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" (click)="onSubmit()">Aceptar</button>
+    <button class="btn btn-secondary" (click)="onCloseModal()">Cerrar</button>
+  </div>
+</div>

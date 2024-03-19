@@ -1,0 +1,68 @@
+[
+  {
+    "method": "GET",
+    "route": "/api/user",
+    "roles": ["USER", "ADMIN"]
+  },
+  {
+    "method": "GET",
+    "route": "/api/product",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "POST",
+    "route": "/api/product",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "GET",
+    "route": "/api/category",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "PUT",
+    "route": "/api/category",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "DELETE",
+    "route": "/api/category/{id}",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "PUT",
+    "route": "/api/category/{id}",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "PUT",
+    "route": "/api/product/{id}",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "DELETE",
+    "route": "/api/product/{id}",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "POST",
+    "route": "/api/supplier",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "PUT",
+    "route": "/api/supplier/{id}",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "DELETE",
+    "route": "/api/supplier/{id}",
+    "roles": ["ADMIN"]
+  },
+  {
+    "method": "GET",
+    "route": "/api/user",
+    "roles": ["USER","ADMIN"]
+  }
+
+]

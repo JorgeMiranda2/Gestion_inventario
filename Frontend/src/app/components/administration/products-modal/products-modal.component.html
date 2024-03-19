@@ -1,0 +1,49 @@
+<div class="container mt-4 mb-5">
+  <h1 class="mb-4 text-center">Productos</h1>
+
+  <form (ngSubmit)="onSubmit()">
+
+      <div class="mb-3 text-center">
+          <h3 for="name" class="form-label">Id: {{ product.id }}</h3>
+      </div>
+
+      <div class="mb-3">
+          <label for="name" class="form-label">Nombre:</label>
+          <input type="text" id="name" class="form-control" [(ngModel)]="product.name" name="name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="productType" class="form-label">Categoría:</label>
+        <select id="productType" class="form-select" [(ngModel)]="product.categoryType" name="productType" required>
+          <option selected disabled>Selecciona una categoria</option>
+          <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+        </select>
+    </div>
+    
+
+      <div class="mb-3">
+          <label for="description" class="form-label">Descripción:</label>
+          <input type="text" id="description" class="form-control" [(ngModel)]="product.description" name="description" required>
+      </div>
+
+      <div class="mb-3">
+          <label for="productCode" class="form-label">Código:</label>
+          <input type="text" id="productCode" class="form-control" [(ngModel)]="product.productCode" name="productCode" required>
+      </div>
+
+      <div class="mb-3">
+          <label for="storageLocation" class="form-label">Almacen:</label>
+          <input type="text" id="storageLocation" class="form-control" [(ngModel)]="product.storageLocation" name="storageLocation" required>
+      </div>
+
+      <div class="mb-3">
+          <label for="quantity" class="form-label">Cantidad:</label>
+          <input type="number" id="quantity" class="form-control" [(ngModel)]="product.quantity" name="quantity" required>
+      </div>
+
+      <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-secondary" (click)="onCloseModal()">Cerrar</button>
+      </div>
+  </form>
+</div>
