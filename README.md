@@ -1,6 +1,12 @@
 # Gestion_inventario
 primer version de Programa para manejar  el inventario de productos
 
+<<<<<<< HEAD
+=======
+# Gestion_inventario
+primer version de Programa para manejar  el inventario de productos
+
+>>>>>>> ae19b031458eddf28154931e5fc5c16bc1ab7c93
 
 Este proyecto es una aplicación web para el control de inventario que utiliza una arquitectura Modelo-Vista-Controlador (MVC). El backend está desarrollado en Spring Boot y proporciona una API RESTful para interactuar con la base de datos. El frontend está construido con Angular.
 
